@@ -18,12 +18,12 @@ def main():
         output_dir="./results/head",
         evaluation_strategy="epoch",
         save_strategy="no",
-        per_device_train_batch_size=8,
-        per_device_eval_batch_size=8,
-        num_train_epochs=3,
+        per_device_train_batch_size=16,
+        per_device_eval_batch_size=256,
+        num_train_epochs=5,
         weight_decay=0.01,
         logging_dir="./logs/head",
-        logging_steps=10,
+        logging_steps=500,
     )
 
     trainer = Trainer(

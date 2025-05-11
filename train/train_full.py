@@ -21,10 +21,10 @@ def main():
         save_strategy="no",
         per_device_train_batch_size=16,
         per_device_eval_batch_size=256,
-        num_train_epochs=3,
+        num_train_epochs=5,
         weight_decay=0.01,
         logging_dir="./logs/full",
-        logging_steps=100,
+        logging_steps=500,
     )
 
     #for checking/quick testing
